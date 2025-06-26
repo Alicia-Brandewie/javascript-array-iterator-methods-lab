@@ -158,3 +158,24 @@ console.log('Exercise 2 correct result: ', [
   { first: 'Hanna', last: 'Hammarström' },
 ]);
 
+/*
+Exercise 3: Array.prototype.sort()
+
+Sort the inventors by birth date in ascending order (from those born furthest in
+the past to those born most recently).
+*/
+
+//let sortedByBirthYear = [];
+
+// Complete the exercise in the space below:
+
+
+console.log(inventors)
+let sortedByBirthYear = inventors.sort ((a,b) => {
+    return a.year - b.year
+}) // had to sort JUST array first, then by the key pair
+
+
+// Check your work:
+console.log('Exercise 3 my result: ', sortedByBirthYear);
+
