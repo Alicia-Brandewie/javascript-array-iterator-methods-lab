@@ -223,15 +223,18 @@ Hint: Use the String.prototype.split() method to separate the first and last
 
 
 // Complete the exercise in the space below:
+let firstLast =[]
 
 const names = people.map((person) => {
-    return person.split(", ");
+    let fullName = person.split(", ");
+    fullName = fullName[1] + " " + fullName[0];
+    firstLast.push (fullName);
 });
-console.log(names)
 
-const firstLast = names.map((lastFirst) => {
-    return lastFirst[1][0]
-});
+
+// const firstLast = names.map((lastFirst) => {
+//     return lastFirst[1][0]
+// });
 
 console.log(firstLast)
 
